@@ -1,5 +1,0 @@
-ciao mondo
-
-
-mi sto esercitando con git hub!
-ok
