@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-XXXXX" crossorigin="anonymous" />
+<link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#menu-toggle:checked + .menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+}
+
+
+    </style>
+
+    <nav>
+        <div class="logo">
+          <img src="logo.png" alt="Logo">
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      
+      
+      
+      
+      
+      
+      
+ 
+
+    
+</body>
+</html>
